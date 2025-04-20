@@ -1,0 +1,30 @@
+# Directories
+node_modules
+dist
+build
+output
+out
+coverage
+.nyc_output
+
+# Files
+*.log*
+
+#--------------------------------------------------#
+# The following was generated with gitignore.nvim: #
+#--------------------------------------------------#
+# Gitignore for the following technologies: JupyterNotebooks
+
+# gitignore template for Jupyter Notebooks
+# website: http://jupyter.org/
+
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# IPython
+profile_default/
+ipython_config.py
+
+# database
+# /database/*
+# !/database/*.enc.db
