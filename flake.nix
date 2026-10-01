@@ -21,6 +21,7 @@
             numpy
             graphviz
             matplotlib
+            tkinter
           ]))
 
           sqlite
