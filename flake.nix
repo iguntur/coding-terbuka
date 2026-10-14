@@ -8,7 +8,7 @@
     nix-vite-plus.url = "github:ryoppippi/nix-vite-plus";
     nix-vite-plus.inputs.nixpkgs.follows = "nixpkgs";
   };
-  outputs = inputs@{ flake-parts, ... }: flake-parts.lib.mkFlake { inherit inputs; } ({ ... }: {
+  outputs = inputs@{ flake-parts, ... }: flake-parts.lib.mkFlake { inherit inputs; } {
     systems = [
       "aarch64-darwin"
       "aarch64-linux"
@@ -32,10 +32,11 @@
           ruff # Extremely fast Python linter and code formatter
           # uv # Extremely fast Python package installer and resolver, written in Rust
           nodejs # Event-driven I/O framework for the V8 JavaScript engine
+          pnpm
 
           inputs'.nix-vite-plus.packages.vp
         ];
       };
     };
-  });
+  };
 }
